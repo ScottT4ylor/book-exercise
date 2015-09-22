@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String refNumber;
     
     //Constructors
     /**
@@ -23,6 +24,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
     
     //Methods
@@ -43,8 +45,19 @@ class Book
         return pages;
     }
     
-    //Accessors
+        public String getRefNumber()
+    {
+        return refNumber;
+    }
     
+    //Setters
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+    }
+    
+    //Accessors
+        
     public void printAuthor()
     {
         System.out.println(author);
