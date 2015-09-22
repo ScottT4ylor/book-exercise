@@ -73,5 +73,9 @@ class Book
         System.out.println(title + " by " + author + " is " + pages + " pages long.");
     }
     
-    
+    public Book(String bookAuthor, String bookTitle)
+    {
+        author = bookAuthor;
+        title = bookTitle;
+    }
 }
