@@ -8,10 +8,11 @@
  */
 class Book
 {
-    // The fields.
+    // Fields.
     private String author;
     private String title;
-
+    
+    //Constructors
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -21,7 +22,10 @@ class Book
         author = bookAuthor;
         title = bookTitle;
     }
-
+    
+    //Methods
+    
+    //Getters
     public String getAuthor()
     {
         return author;
@@ -30,5 +34,15 @@ class Book
     public String getTitle()
     {
         return title;
+    }
+    
+    public void printAuthor()
+    {
+        System.out.println(author);
+    }
+    
+    public void printTitle()
+    {
+        System.out.println(title);
     }
 }
