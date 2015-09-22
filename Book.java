@@ -70,6 +70,13 @@ class Book
     
     public void printDetails()
     {
-        System.out.println(title + " by " + author + " is " + pages + " pages long.");
+        if(refNumber.length() > 0)
+        {
+            System.out.println(title + " by " + author + " is " + pages + " pages long. Reference number: " + refNumber);
+        }
+        else
+        {
+            System.out.println(title + " by " + author + " is " + pages + " pages long. Reference Number: ZZZ");
+        }
     }
 }
