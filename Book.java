@@ -54,4 +54,11 @@ class Book
     {
         System.out.println(title);
     }
+    
+    public void printDetails()
+    {
+        System.out.println(title + " by " + author + " is " + pages + " pages long.");
+    }
+    
+    
 }
