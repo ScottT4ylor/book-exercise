@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private int borrowed;
     private String refNumber;
     
     //Constructors
@@ -50,6 +51,11 @@ class Book
         return refNumber;
     }
     
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
     //Setters
     public void setRefNumber(String ref)
     {
@@ -61,6 +67,11 @@ class Book
         {
             System.out.println("Must be at least 3 characters");
         }
+    }
+    
+    public void borrow()
+    {
+        borrowed++;
     }
     
     //Accessors
@@ -79,11 +90,11 @@ class Book
     {
         if(refNumber.length() > 0)
         {
-            System.out.println(title + " by " + author + " is " + pages + " pages long. Reference number: " + refNumber);
+            System.out.println(title + " by " + author + " is " + pages + " pages long. Borrowed " + borrowed + " times. Reference number: " + refNumber);
         }
         else
         {
-            System.out.println(title + " by " + author + " is " + pages + " pages long. Reference Number: ZZZ");
+            System.out.println(title + " by " + author + " is " + pages + " pages long. Borrowed " + borrowed + " times. Reference Number: ZZZ");
         }
     }
 }
